@@ -1,25 +1,9 @@
-import { StatusBar } from "expo-status-bar";
-import React, { Fragment } from "react";
-import { StyleSheet, Text, View, SafeAreaView } from "react-native";
+import { StatusBar } from 'expo-status-bar'
+import React from 'react'
+
+import MainStackNavigator from './src/navigation/MainStackNavigator'
+import { View, Text } from 'react-native'
 
 export default function App() {
-  return (
-    <Fragment>
-      <SafeAreaView style={{ flex: 0, backgroundColor: "red" }} />
-      <SafeAreaView style={{ flex: 1, backgroundColor: "pink" }}>
-        <View style={styles.container}>
-          <Text style={styles.welcome}>Welcome to React Native!</Text>
-        </View>
-      </SafeAreaView>
-    </Fragment>
-  );
+  return <MainStackNavigator />
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "pink",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
